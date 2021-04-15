@@ -113,7 +113,7 @@ var instructions2Dimensions = {
 ////////////////////////////////////////////////////
 ////////////////////////////////////////////////////
 
-//TUTORIAL - https://www.tetoki.eu/vida/active_zones_progressive_background_camera.html
+//Use camera as motion sensor/pseudo distance sensor -  https://www.tetoki.eu/vida/active_zones_progressive_background_camera.html
 
 var sensorSketch = function (p){
 
@@ -407,7 +407,7 @@ var sensorSketch = function (p){
 
 
 
-        //CONTROL ANOTHER P5 SKETCH CANVAS USING ACTIVE ZONE
+        //CONTROL P5 DIDACTIC TEXT CANVASES USING MOTION DETECTION
         if(_vidaActiveZone.isMovementDetectedFlag == true){
 
             activeZoneHit = true;
@@ -439,6 +439,8 @@ var sensorSketch = function (p){
 ///////////////////// DIDACTIC TEXT ////////////////////
 ////////////////////////////////////////////////////
 ////////////////////////////////////////////////////
+
+///type distortion effect on didactic text - https://timrodenbroeker.de/processing-tutorial-kinetic-typography-1/
 
 
 /// HEADING ////////////
@@ -1022,7 +1024,7 @@ var copy4Sketch = function(p) {
 
 
 
-/// INSTURCTION ////////////
+/// INSTRUCTION ////////////
 ////////////////////////
 var instruction1Sketch = function(p) {
 
@@ -1190,9 +1192,13 @@ var instruction2Sketch = function(p) {
 
 //////// FUNCTION CALLS //////////////
 
-///SENSOR
-let vidaSketch = new p5(sensorSketch, "cameraContainer");
+//p5.js instance mode to create multiple p5 Canvas -  https://www.youtube.com/watch?v=Su792jEauZg&ab_channel=TheCodingTrain
 
+
+
+///SENSOR             
+let vidaSketch = new p5(sensorSketch, "cameraContainer");
+                     //(instance mode function, store Canvas in which html container)
 
 ///DIDACTIC TEXT
 let heading1 = new p5(heading1Sketch, "heading1");

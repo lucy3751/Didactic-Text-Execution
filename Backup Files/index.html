@@ -4,8 +4,28 @@
 
     <head>
 
-        <link rel="stylesheet" href="stylesheet.css">
-    
+        <style>
+
+            *{
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+
+            }
+
+            #didacticTextContainer{
+
+                background-color: darkcyan;
+                position: absolute;
+                    left: 50%;
+                    transform: translate(-50%);
+                
+
+            }
+
+
+
+        </style>
     </head>
 
 
@@ -14,7 +34,7 @@
 
         <div id="didacticTextContainer">
 
-            <div id="topContainer">
+            <div id="topContainer" class="block">
 
                 <div id="heading1"></div>
                 <div id="heading2"></div>
@@ -22,14 +42,14 @@
             </div>    
 
 
-            <div id="bottomContainer">
+            <div id="bottomContainer" class="block">
 
-                <div id="informationWrapper">
+                <div id="informationWrapper" class="inline-block">
 
                     <div id="information"></div>
                 </div>
 
-                <div id="copyInstructionContainer">
+                <div id="copyInstructionContainer" class="inline-block">
 
                     <div id="copyWrapper">
 
@@ -84,7 +104,7 @@
         <script src="vida/p5.vida.min.js"></script>
 
         <!-- custom script -->
-        <script src="test3.js"></script>
+        <script src="test2.js"></script>
     </body>
 
 </html>

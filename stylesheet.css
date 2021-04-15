@@ -1,0 +1,170 @@
+
+
+
+
+:root{
+
+    --someScale: 1.5;
+
+
+}
+
+
+
+*{
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+body{
+
+    min-width: 1270px;
+    min-height: 750px;
+
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+}
+
+
+
+#didacticTextContainer{
+
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+
+    margin-left:auto;
+    margin-right: auto;
+    padding: calc(50px/var(--someScale));
+    padding-bottom: 10px;
+    
+
+}
+
+
+
+
+/* TOP CONTAINER */
+
+/* #topContainer{
+
+    background-color: purple;
+} */
+
+
+#heading1{
+
+    width: calc(488px/var(--someScale));
+    height: calc(72px/var(--someScale));
+    margin-bottom: calc(44px/var(--someScale));
+
+    /* background-color: darkcyan; */
+
+
+}
+
+#heading2{
+
+    width: calc(458px/var(--someScale));
+    height: calc(94px/var(--someScale));
+    margin-bottom: calc(84px/var(--someScale));
+
+    /* background-color: darkorange; */
+
+}
+
+
+
+
+
+
+
+
+
+/* BOTTOM CONTAINER */
+
+#bottomContainer{
+
+    display: flex;
+    flex-direction: row;
+    /* background-color: green; */
+
+}
+
+
+
+#information{
+
+    width: calc(133px/var(--someScale));
+    height: calc(91px/var(--someScale));
+    margin-top: calc(7px/var(--someScale));
+
+}
+
+#copyInstructionContainer{
+
+    margin-left: calc(113.35px/var(--someScale));
+
+}
+
+#copy1{
+
+    width: calc(722px/var(--someScale));
+    height: calc(71px/var(--someScale));
+}
+
+#copy2{
+
+    width: calc(722px/var(--someScale));
+    height: calc(70px/var(--someScale));
+
+}
+
+#copy3{
+
+    width: calc(722px/var(--someScale));
+    height: calc(70px/var(--someScale));
+
+}
+
+#copy4{
+
+    width: calc(722px/var(--someScale));
+    height: calc(63px/var(--someScale));
+    margin-bottom: calc(62px/var(--someScale));
+
+}
+
+#instruction1{
+
+    width: calc(607px/var(--someScale));
+    height: calc(47px/var(--someScale));
+
+}
+
+
+#instruction2{
+
+    width: calc(607px/var(--someScale));
+    height: calc(43px/var(--someScale));
+}
+
+
+
+
+
+#cameraContainer{
+
+    width: calc(300/var(--someScale));
+    height: calc(240/var(--someScale));
+
+    float:right;
+
+      
+
+}
